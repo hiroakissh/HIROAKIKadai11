@@ -40,10 +40,3 @@ extension TableViewController: UITableViewDataSource, UITableViewDelegate {
         return cell
     }
 }
-
-extension TableViewController {
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        print(indexPath.row)
-    }
-}
