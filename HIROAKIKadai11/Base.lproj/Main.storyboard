@@ -84,6 +84,9 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Fcb-Io-NK1" kind="unwind" unwindAction="selectStateWithSegue:" id="ueS-4r-95F"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -96,10 +99,18 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="都道府県" leftItemsSupplementBackButton="YES" id="4NZ-bK-Gr0">
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="cancel" id="aMk-W6-d7i"/>
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="cancel" id="aMk-W6-d7i">
+                            <connections>
+                                <segue destination="Fcb-Io-NK1" kind="unwind" unwindAction="exitCancelWithSegue:" id="z3P-or-2Lo"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="dCo-Ii-0zx" id="2id-ni-OjF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5yi-7T-mrv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Fcb-Io-NK1" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1786.9565217391305" y="105.80357142857143"/>
         </scene>
