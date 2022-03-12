@@ -95,6 +95,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="9Fp-3Q-4pW" id="Ed1-AM-K0h"/>
+                                    <outlet property="delegate" destination="9Fp-3Q-4pW" id="j2C-q7-XrT"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7J8-eH-6aX"/>
