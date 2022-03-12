@@ -23,6 +23,9 @@ class TableViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        // 上記でtableViewを宣言したため、delegateとdataSourceが自身であることを記述
+        tableView.delegate = self
+        tableView.dataSource = self
     }
 }
 
