@@ -96,11 +96,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="都道府県" leftItemsSupplementBackButton="YES" id="4NZ-bK-Gr0">
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="cancel" id="aMk-W6-d7i">
-                            <connections>
-                                <action selector="cancelButton:" destination="9Fp-3Q-4pW" id="LVY-ip-0Es"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="cancel" id="aMk-W6-d7i"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5yi-7T-mrv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

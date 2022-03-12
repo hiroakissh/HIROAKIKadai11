@@ -20,13 +20,7 @@ class TableViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
-
-    @IBAction func cancelButton(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
-    }
-
 }
 
 extension TableViewController: UITableViewDataSource, UITableViewDelegate {
@@ -38,5 +32,12 @@ extension TableViewController: UITableViewDataSource, UITableViewDelegate {
         let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text = japanAreas[indexPath.row]
         return cell
+    }
+}
+
+extension TableViewController {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        print(indexPath.row)
     }
 }
