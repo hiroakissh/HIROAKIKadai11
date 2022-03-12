@@ -13,6 +13,16 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    }
+
+    @IBAction private func selectState(segue: UIStoryboardSegue) {
+        if let controller = segue.source as? TableViewController {
+            if let indexPath = controller.tableView.indexPathForSelectedRow {
+                self.stateLabel.text = controller.japanAreas[indexPath.row]
+            }
+        }
+    }
+
+    @IBAction private func exitCancel(segue: UIStoryboardSegue) {
     }
 }
