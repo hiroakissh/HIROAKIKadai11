@@ -14,6 +14,7 @@
 		53CB573B27DC628E00AB7FA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53CB573927DC628E00AB7FA4 /* Main.storyboard */; };
 		53CB573D27DC628E00AB7FA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53CB573C27DC628E00AB7FA4 /* Assets.xcassets */; };
 		53CB574027DC628E00AB7FA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53CB573E27DC628E00AB7FA4 /* LaunchScreen.storyboard */; };
+		53CB574927DC663D00AB7FA4 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CB574827DC663D00AB7FA4 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		53CB573C27DC628E00AB7FA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		53CB573F27DC628E00AB7FA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		53CB574127DC628E00AB7FA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53CB574827DC663D00AB7FA4 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		DEE2E35DFE6E99CB3F29B46F /* Pods-HIROAKIKadai11.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HIROAKIKadai11.release.xcconfig"; path = "Target Support Files/Pods-HIROAKIKadai11/Pods-HIROAKIKadai11.release.xcconfig"; sourceTree = "<group>"; };
 		F8B73BA1752D487AC2843E19 /* Pods_HIROAKIKadai11.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HIROAKIKadai11.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -66,6 +68,7 @@
 				53CB573327DC628E00AB7FA4 /* AppDelegate.swift */,
 				53CB573527DC628E00AB7FA4 /* SceneDelegate.swift */,
 				53CB573727DC628E00AB7FA4 /* ViewController.swift */,
+				53CB574827DC663D00AB7FA4 /* TableViewController.swift */,
 				53CB573927DC628E00AB7FA4 /* Main.storyboard */,
 				53CB573C27DC628E00AB7FA4 /* Assets.xcassets */,
 				53CB573E27DC628E00AB7FA4 /* LaunchScreen.storyboard */,
@@ -209,6 +212,7 @@
 				53CB573827DC628E00AB7FA4 /* ViewController.swift in Sources */,
 				53CB573427DC628E00AB7FA4 /* AppDelegate.swift in Sources */,
 				53CB573627DC628E00AB7FA4 /* SceneDelegate.swift in Sources */,
+				53CB574927DC663D00AB7FA4 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
