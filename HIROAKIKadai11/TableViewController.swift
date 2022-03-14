@@ -21,7 +21,7 @@ class TableViewController: UIViewController {
             "佐賀県", "長崎県", "熊本県", "大分県", "宮崎県", "鹿児島県", "沖縄県"
         ]
 
-    private(set) var selecttedArea: String?
+    private(set) var selectedArea: String?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,5 +40,10 @@ extension TableViewController: UITableViewDataSource, UITableViewDelegate {
         let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text = japanAreas[indexPath.row]
         return cell
+    }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedArea = japanAreas[indexPath.row]
+        performSegue(withIdentifier: "selecetState", sender: nil)
     }
 }
