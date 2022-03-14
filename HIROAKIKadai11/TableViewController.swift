@@ -44,6 +44,6 @@ extension TableViewController: UITableViewDataSource, UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         selectedArea = japanAreas[indexPath.row]
-        performSegue(withIdentifier: "selecetState", sender: nil)
+        performSegue(withIdentifier: "selectState", sender: nil)
     }
 }
