@@ -21,6 +21,8 @@ class TableViewController: UIViewController {
             "佐賀県", "長崎県", "熊本県", "大分県", "宮崎県", "鹿児島県", "沖縄県"
         ]
 
+    private(set) var selecttedArea: String?
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // 上記でtableViewを宣言したため、delegateとdataSourceが自身であることを記述
