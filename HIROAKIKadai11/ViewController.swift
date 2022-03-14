@@ -16,11 +16,10 @@ class ViewController: UIViewController {
     }
 
     @IBAction private func selectState(segue: UIStoryboardSegue) {
-        if let controller = segue.source as? TableViewController {
-            if let indexPath = controller.tableView.indexPathForSelectedRow {
-                self.stateLabel.text = controller.japanAreas[indexPath.row]
-            }
-        }
+        guard let controller = segue.source as? TableViewController,
+            let selectedArea = controller.selectedArea else { return }
+
+        stateLabel.text = selectedArea
     }
 
     @IBAction private func exitCancel(segue: UIStoryboardSegue) {
