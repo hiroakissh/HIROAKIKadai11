@@ -10,7 +10,7 @@ import UIKit
 class TableViewController: UIViewController {
 
     // 親のViewControllerで使用したいので宣言する
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet private weak var tableView: UITableView!
     // privateだと参照できない private(set)にするとletに戻される
     let japanAreas: [String] = [
             "北海道", "青森県", "岩手県", "宮城県", "秋田県", "山形県", "福島県", "茨城県",
